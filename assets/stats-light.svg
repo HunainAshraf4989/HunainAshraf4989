@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-label="Track record: 267 of 6,125 Kaggle debut finish with a silver medal; 3.85 CGPA at NUST; 3 Cambridge top-in-country awards.">
+<title>Track record</title>
+<defs>
+<clipPath id="scard"><rect width="1200" height="250" rx="16"/></clipPath>
+<pattern id="sgrid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.1" fill="#e2e1dd"/></pattern>
+</defs>
+<style>.mono{font-family:ui-monospace,'SFMono-Regular','SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace}</style>
+<g clip-path="url(#scard)">
+<rect width="1200" height="250" fill="#f4f3f0"/>
+<rect width="1200" height="250" fill="url(#sgrid)" opacity="0.7"/>
+<text class="mono" x="54" y="46" font-size="13" font-weight="600" letter-spacing="5" fill="#5f5f66">// TRACK RECORD</text>
+<rect x="54" y="64" width="1092" height="1" fill="#d8d6d0"/>
+<text class="mono" x="54.0" y="140" font-size="40" font-weight="700" letter-spacing="-1" fill="#0a0a0c">267/6,125</text>
+<rect x="54.0" y="156" width="34" height="2" fill="#14141a"/>
+<text class="mono" x="54.0" y="182" font-size="12" fill="#5f5f66">Kaggle debut finish.</text>
+<text class="mono" x="54.0" y="199" font-size="12" fill="#5f5f66">Silver medal, top 5% of</text>
+<text class="mono" x="54.0" y="216" font-size="12" fill="#5f5f66">the leaderboard.</text>
+<rect x="409.0" y="86" width="1" height="112" fill="#d8d6d0"/>
+<text class="mono" x="418.0" y="140" font-size="40" font-weight="700" letter-spacing="-1" fill="#0a0a0c">3.85</text>
+<rect x="418.0" y="156" width="34" height="2" fill="#14141a"/>
+<text class="mono" x="418.0" y="182" font-size="12" fill="#5f5f66">CGPA, BS Computer Science,</text>
+<text class="mono" x="418.0" y="199" font-size="12" fill="#5f5f66">NUST Islamabad.</text>
+<text class="mono" x="418.0" y="216" font-size="12" fill="#5f5f66">Final year.</text>
+<rect x="773.0" y="86" width="1" height="112" fill="#d8d6d0"/>
+<text class="mono" x="782.0" y="140" font-size="40" font-weight="700" letter-spacing="-1" fill="#0a0a0c">3</text>
+<rect x="782.0" y="156" width="34" height="2" fill="#14141a"/>
+<text class="mono" x="782.0" y="182" font-size="12" fill="#5f5f66">Cambridge top-in-country</text>
+<text class="mono" x="782.0" y="199" font-size="12" fill="#5f5f66">awards across O and</text>
+<text class="mono" x="782.0" y="216" font-size="12" fill="#5f5f66">A Level.</text>
+<rect x="0.75" y="0.75" width="1198.5" height="248.5" rx="15.5" fill="none" stroke="#d8d6d0" stroke-width="1.5"/>
+</g></svg>

@@ -1,0 +1,51 @@
+name: generate snake
+
+on:
+  schedule:
+    # once a day, 03:00 UTC
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      # Reads the contribution graph and renders the snake as an SVG animation.
+      # Colours are the profile's monochrome palette: dots run empty -> densest,
+      # and the snake stays brighter than the densest dot so it never vanishes
+      # into a busy week.
+      - name: generate snake svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?color_snake=#f2efe9&color_dots=#16161c,#33333c,#5c5c66,#8f8f99,#c9c6c0
+            dist/snake-light.svg?color_snake=#0a0a0c&color_dots=#e2e1dd,#bdbcb7,#8d8c87,#5c5b57,#2e2d2a
+
+      # Force-push the generated files to a branch that holds nothing else, so
+      # the README can hotlink them via raw.githubusercontent.com. Plain git on
+      # purpose: no third-party action here means no pinned version to rot.
+      - name: push to output branch
+        working-directory: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "generated from ${GITHUB_SHA}"
+          git push -f -q \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:output
