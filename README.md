@@ -29,7 +29,7 @@ An MCP server with 13 tools an agent uses to design PyTorch models, while you ed
 
 ### AI Hunain &nbsp;<sub>`FastAPI` `LangChain` `Gemini` `Qdrant`</sub>
 
-The assistant on my site is a RAG pipeline over my own resume and GitHub. Free-tier quota, not correctness, was the binding constraint: a curated FAQ and a cache answer the common questions with zero model calls, and the chain falls through six models when one runs dry.
+The assistant on my site is a RAG pipeline over my own resume and GitHub.
 
 ### [Academic Policy QA](https://github.com/ARFAABDULNASIR/NUST_UGHandbook_RAG-system) &nbsp;<sub>`RAG` `MinHash+LSH` `RRF`</sub>
 <sub>with [@ARFAABDULNASIR](https://github.com/ARFAABDULNASIR)</sub>
@@ -65,7 +65,7 @@ Storage split by access pattern: crime data in PostgreSQL, community posts in Mo
 ## <samp>02</samp> &nbsp;Where I've shipped
 
 **Tensor Labs** &nbsp;·&nbsp; ML Engineer Intern &nbsp;·&nbsp; Jun to Jul 2026<br>
-Qualzo's admin and monitoring stack, provisioned as code and shipped with the FastAPI backend. Funnel analytics off Postgres materialised views, and LLM cost tracking attributed by model, provider and operation.
+Qualzo's admin and monitoring stack, provisioned as code and shipped as grafana dashboards. Funnel analytics off Postgres materialised views, and LLM cost tracking attributed by model, provider and operation.
 
 **Tensor Labs** &nbsp;·&nbsp; ML Engineer Intern &nbsp;·&nbsp; Jul to Sep 2025<br>
 A Text-to-SQL agent that generates, validates and formats SQL from plain English. FinSight's trading-signal pipeline, and Hyper-NBA score prediction delivered to a client.
@@ -82,10 +82,6 @@ A Text-to-SQL agent that generates, validates and formats SQL from plain English
 | **Frontend** | TypeScript · React · Next.js · Tailwind |
 
 <br>
-
-## <samp>04</samp> &nbsp;Now
-
-Building **VoiceStudio**, my final-year project at SEECS: a bilingual Urdu and English voice tutor for vocational auto-electrician training. Most of the people it is for do not read the language the training material is written in.
 
 <details>
 <summary><b>Education and certifications</b></summary>
